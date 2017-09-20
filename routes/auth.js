@@ -7,6 +7,6 @@ module.exports = {
 function authenticate(req, res){
     
     return new Promise((resolve, reject) => {
-        resolve('good to go!');
+        resolve(req.body);
     })
 }
