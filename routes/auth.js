@@ -1,15 +1,17 @@
-// url : controller key-value pair.
+'use strict';
 
 module.exports = {
     '/authenticate': {
-        controller: authenticate,
-        method: 'GET'
+        'POST': authenticate,
+
     }
 };
 
 function authenticate(req, res){
     
     return new Promise((resolve, reject) => {
-        resolve(req.body);
+        setTimeout(() => {
+            resolve(req.body);
+        },1000)
     })
 }
