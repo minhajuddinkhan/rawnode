@@ -1,8 +1,11 @@
 // url : controller key-value pair.
 
 module.exports = {
-    '/authenticate': authenticate
-}
+    '/authenticate': {
+        controller: authenticate,
+        method: 'GET'
+    }
+};
 
 function authenticate(req, res){
     
