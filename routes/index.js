@@ -1,14 +1,14 @@
 
-const auth = require('./auth');
+const auth = require( "./auth" );
 let routes = {};
 
 module.exports = {
-    bootstrap : () => {
+	"bootstrap": () => {
 
-        routes = Object.assign(routes,
-            auth
-        );
-        return routes;
-    },
-    require: () => routes
+		routes = Object.assign( routes,
+			auth
+		);
+		return routes;
+	},
+	"require": () => routes
 };

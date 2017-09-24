@@ -7,7 +7,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fix": "./node_modules/.bin/eslint --fix app/js bootstrap/** lib/** routes/**"
   },
   "repository": {
     "type": "git",
@@ -26,5 +27,9 @@
     "raw-body": "^2.3.2",
     "route-parser": "0.0.5",
     "sequelize": "^4.10.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.7.2",
+    "eslint-plugin-async-await": "0.0.0"
   }
 }

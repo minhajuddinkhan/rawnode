@@ -1,17 +1,17 @@
-'use strict';
+"use strict";
 
 module.exports = {
-    '/authenticate': {
-        'POST': authenticate,
+	"/authenticate": {
+		"POST": authenticate
 
-    }
+	}
 };
 
-function authenticate(req, res){
+function authenticate( req ) {
     
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(req.body);
-        },1000)
-    })
+	return new Promise( ( resolve ) => {
+		setTimeout( () => {
+			resolve( req.body );
+		}, 1000 );
+	} );
 }

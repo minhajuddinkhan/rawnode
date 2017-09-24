@@ -1,3 +1,4 @@
+"use strict";
 
+require( "./bootstrap" )();
 
-require('./bootstrap')();
