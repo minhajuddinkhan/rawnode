@@ -21,7 +21,10 @@
   "homepage": "https://github.com/minhajuddinkhan/rawnode#readme",
   "dependencies": {
     "content-type": "^1.0.4",
+    "pg": "^7.3.0",
+    "pg-hstore": "^2.3.2",
     "raw-body": "^2.3.2",
-    "route-parser": "0.0.5"
+    "route-parser": "0.0.5",
+    "sequelize": "^4.10.3"
   }
 }

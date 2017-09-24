@@ -1,3 +1,3 @@
 
 
-require('./bootstrap').start();
+require('./bootstrap')();
