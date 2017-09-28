@@ -4,4 +4,5 @@ WORKDIR /src
 EXPOSE 3000
 EXPOSE 5432
 RUN npm install
+COPY . .
 CMD ["node", "app.js"]
